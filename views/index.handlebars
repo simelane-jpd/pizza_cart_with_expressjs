@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Pizza</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+
+
+    <div class="center">
+        <h1><b><i>Perfect Pizza</i></b></h1>
+    </div>
+    
+
+    <div class="shopping_cart">
+        {{#if uncart}}
+        <h2>Shopping Cart</h2>
+        <table class="cartTable">
+
+            <tr>
+                <td class="item">
+
+
+                    <h3>Small Pizza</h3>
+                </td>
+                <td>
+                    <a href="Sadd">
+                        <button class="smallAddbtn">+</button></a>
+                </td>
+                <td class="smallQty">{{smallQty}}</td>
+                <td>
+                    <a href="Ssub">
+                        <button class="smallSubbtn">-</button></a>
+                </td>
+
+                <td class="smallTotal">R{{smallTotal}}</td>
+
+            </tr>
+            <tr>
+                <td class="item">
+
+
+                    <h3>Medium Pizza</h3>
+                </td>
+                <td>
+                    <a href="Madd">
+                        <button class="mediumAddbtn">+</button></a>
+                </td>
+                <td class="mediumQty">{{mediumQty}}</td>
+                <td>
+                    <a href="Msub">
+                        <button class="mediumSubbtn">-</button></a>
+                </td>
+
+                <td class="mediumTotal">R{{mediumTotal}}</td>
+            </tr>
+            <tr>
+                <td class="item">
+
+
+                    <h3>Large Pizza</h3>
+                </td>
+                <td>
+                    <a href="Ladd">
+                        <button class="largeAddbtn">+</button></a>
+                </td>
+                <td class="largeQty">{{largeQty}}</td>
+                <td>
+                    <a href="Lsub">
+                        <button class="largeSubbtn">-</button></a>
+                </td>
+
+                <td class="largeTotal">R{{largeTotal}}</td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Total</td>
+                <td>
+
+
+
+                <td class="total">R{{total}}</td>
+            </tr>
+        </table>
+        {{#if unhide}}
+        <div class="message">{{message}}
+        </div>
+        <form action="amount" method="POST">
+            <div><label class="labeler" for="mes">Payment Amount</label>
+                <input type="number" step="0.00" name="amount" class="cash" id="mes" required>
+            </div>
+            <br>
+            <div><button type="submit" class="paymBtn">Pay</button></div>
+            
+            <form action="reset" method="POST">
+            
+                <input type="submit" step="0.00" name="reset amount" value="reset amount">
+            </div>
+
+            
+        </form>
+        {{else}}
+        <h6>please add at least 1 item in a cart</h6>
+        {{/if}}
+        {{else}}
+        {{/if}}
+
+    </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+    <div class="pizzas">
+
+
+        <div class="pizza small_pizza">
+            <h2>Small Pizza</h2>
+
+
+
+            <img src="Pizza-one.jpg" width="100">
+
+            <h3>R49.00</h3>
+
+            <div>
+                CREAMY CHICKEN & MUSHROOM with
+                thin & crispy base, half cheese for a healthier alternative, sweet bell pepper, spring onion,
+                juicy
+                secret cream
+            </div>
+
+            <td>
+                <a href="small" target="_self"><button class="sButbtn">Buy</button></i></a>
+
+
+
+            </td>
+
+
+        </div>
+
+
+    
+
+
+
+    <div class="pizza medium_pizza">
+        <h2>Medium Pizza</h2>
+
+
+
+        <img src="Pizza-one.jpg" width="125">
+
+        <h3>R89.00</h3>
+        <div>
+            MEATY BEEF STEAK with
+            double thick layers with enough cheese, tomato, crispy onion, juicy secret sauce
+        </div>
+        <td>
+            <a href="medium" target="_self"><button class="mButbtn">Buy</button></i></a>
+
+        </td>
+    </div>
+
+
+
+
+    <div class="pizza Large_pizza">
+        <h2>Large Pizza</h2>
+
+
+
+        <img src="Pizza-one.jpg" alt="pizza" width="150">
+
+        <h3>R129.00</h3>
+
+        <div>
+            MEXICAN FIESTA with
+            triple thick layers, mozzarella cheese, ground beef, green peper, Mexican sauce
+        </div>
+
+
+        <td>
+            <a href="large" target="_self"><button class="lButbtn">Buy</button></i></a>
+
+        </td>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    <div class="pizza contact_us">
+
+
+
+        <h2>Contact details</h2>
+        Contact us at: 011 340 1231 info@perfectpizza.co.za
+    </div>
+    
+    
+
+
+
+
+
+</body>
+
+</html>

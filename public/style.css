@@ -1,0 +1,241 @@
+
+
+body {
+    background-color: #FFBE0B;
+    font-family:inherit;
+}
+
+
+
+
+.shopping_cart {
+    justify-content: center;
+    background-color: #fcd5ce;
+  
+   
+    text-align: center;
+    margin: 1cm;
+    margin-top: 0cm;
+    margin-bottom: 2em;
+    padding: 0cm;
+    padding-top: 0em;
+    border-radius: 1em;
+    box-align: center;
+    position:relative;
+    
+
+    
+  
+}
+.cartTable, .lebeler .largeTotal{
+    justify-content: center;
+    background-color: #fcd5ce;
+    display: flex;
+    margin-top: 1cm;
+   
+   
+    text-align: center;
+    margin: 0em;
+    margin-bottom: 2em;
+    padding: 0cm;
+    padding-top: 0em;
+    border-radius: 1em;
+    box-align: center;
+    position:relative;
+   
+
+}
+    
+
+
+
+h1 {
+    text-align: center;
+
+}
+
+
+
+.cart {
+    margin-left: auto;
+    margin-right: auto;
+    flex: 5;
+    
+}
+
+.item {
+    text-align: center;
+}
+.smallTotal {
+    text-align: center;
+}
+.mediumTotal {
+    text-align: center;
+}
+.largeTotal {
+    text-align: center;
+}
+.total {
+    text-align: center;
+}
+.message {
+    text-align: center;
+}
+.close {
+    border: 1pt solid white;
+    border-radius: 2em;
+    padding: 5px 10px;
+    background-color:darkred;
+    text-decoration: none;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    
+  }
+
+.hidden {
+    display: none;
+}
+
+.containerBox {
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    text-align: center;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.total, .cash {
+    display: block;
+    margin: auto;
+    border-radius: 1em;
+    border: none;
+    padding: 10px 15px;
+    background-color: #e76f51;
+    font-family: inherit;
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+ .sButbtn, .mButbtn, .lButbtn {
+    display: block;
+    margin: auto;
+    border-radius: 2em;
+    
+    padding: 5px 10px;
+    border:chartreuse 1px solid;
+    background-color:chartreuse;
+
+    font-family: inherit;
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pAmt {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.payAmt {
+    border: none;
+    margin-left: 3px;
+    padding: 5px;
+    width: 50pt;
+    background-color:crimson;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.pBtn:active, .mBtn:active, .checkOut:active, .payBtn:active, .close:active {
+    box-shadow: 2px 2px 2px 2px burlywood (141, 141, 141);
+}
+
+
+
+body {
+    background-color: #FFBE0B;
+    font-family:inherit;
+}
+h1 {
+    text-align: center;
+    
+    
+   
+
+}
+
+
+
+.pizza {
+    border: 1px solid #FB5607;
+    padding: 1cm;
+    margin: 1cm;
+    margin-bottom: 0.5cm;
+    border-radius: 0.5cm;
+    margin-top: 1cm;
+    
+    
+   
+   
+   
+    
+}
+
+.medium_pizza {
+    background-color: #FF006E;
+    flex: 1.5
+
+    
+}
+
+.Large_pizza {
+    background-color: #8338EC;
+    flex: 1.5
+
+}
+
+.small_pizza {
+    background-color: #3A86FF;
+    flex : 1.5
+}
+
+
+
+.contact_us {
+    background-color:#8F2D56 ;
+    text-align: center;
+}
+.special {
+    background-color: violet;
+    color: white;
+}
+
+
+
+@media (min-width: 760px) {
+    body {
+        background-color: darkturquoise;
+
+    }
+   
+    
+}
+
+@media (min-width: 960px) {
+    body {
+        background-color:#FFBE0B;
+    }
+    .pizzas {
+        display: flex;
+    }   
+    
+}
+
+
